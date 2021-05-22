@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    // smooth scrool
     $("a").click(function(event) {
         event.preventDefault();
 
@@ -7,8 +8,16 @@ $(document).ready(function() {
 
         $("html").animate(
             {
-            scrollTop: $(gato).offset().top - 90,
+            scrollTop: $(gato).offset().top - 86,
         }, 800
         );
     });
+
+
+    // tooltip en íconos
+    $('[data-toggle="tooltip"]').tooltip()
+   
+    // popover en cards
+    $('[data-toggle="popover"]').popover()
+    
 });

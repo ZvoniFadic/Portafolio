@@ -105,13 +105,13 @@
         <div class="row pt-3">
 
             <article class="col-12 col-sm-6">
-                <i class="fab fa-empire fa-10x"></i>
+                <i data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="fab fa-empire fa-10x"></i>
                 <h4 class="font-weight-bold mt-3">Stormtrooper</h4>
                 <h4>1990-2014</h4>
             </article>
 
             <article class="col-12 col-sm-6">
-                <i class="fab fa-medium-m fa-10x"></i>
+                <i data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?" class="fab fa-medium-m fa-10x"></i>
                 <h4 class="font-weight-bold mt-3">Desarrollador Front-end</h4>
                 <h4>20117-2021</h4>
             </article>
@@ -137,7 +137,7 @@
 
                 <div class="col-12 col-sm-4 my-3">
                     <div class="card border-0">
-                        <img src="/assets/img/meet_coffee.png" alt="" class="card-img-top">
+                        <img src="/assets/img/meet_coffee.png" alt="" data-toggle="modal" data-target="#exampleModal"class="card-img-top">
 
                         <div class="card-body">
                             <h4 class="card-title mb-3">Meet&Cofee</h4>
@@ -205,6 +205,28 @@
     </section>
 
     <!-- fin sección trabajos -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
     
 
     <!-- sección formulario -->
